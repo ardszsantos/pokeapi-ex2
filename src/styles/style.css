@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.body {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+.red-div {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgb(127, 29, 29); 
+}
+
+.black-div {
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    background-color: black;
+    
+}
+
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.search-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+
+
+#pokemon-form {
+    display: flex;
+    align-items: center;
+}
+
+#pokemon-name  {
+    padding: 10px 5px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+
+
+#pokemon-name:focus {
+    outline: none;
+}
+
+#pokemon-name::placeholder {
+    font-size: 11px;
+}
+
+.searchButton {
+    padding: 10px 5px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    transition: 0.3s ease-in-out;
+}
+
+.searchButton img {
+    width: 20px;
+    height: 10px;
+}
+
+.searchButton:hover {
+    background-color: greenyellow;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    border: 3px solid #c0c0c0; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(192, 192, 192, 0.8);
+    overflow: hidden;
+    background-color: white;
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    border: 3px solid #c0c0c0; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(192, 192, 192, 0.8); 
+    overflow: hidden;
+    background-color: white;
+    animation: flowingBorder 4s linear infinite; 
+}
+
+@keyframes flowingBorder {
+    0% {
+        border-color: #c0c0c0;
+    }
+    25% {
+        border-color: var(--pokemon-color);
+    }
+    50% {
+        border-color: #c0c0c0; 
+    }
+    75% {
+        border-color: var(--pokemon-color); 
+    }
+    100% {
+        border-color: #c0c0c0; 
+    }
+}
